@@ -35,7 +35,7 @@
         player.style.height = "100%";
         document.getElementById("ruffle-container").appendChild(player);
 
-        const swfUrl = "BiWrath.swf";
+        const swfUrl = ".\BiWrath.swf";
         player.load(swfUrl).catch(err => {
             console.error("Load failed:", err);
             document.body.innerHTML = `<p style='color:red'>Cannot load SWF: ${err.message}</p>`;
