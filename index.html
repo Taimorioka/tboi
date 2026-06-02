@@ -35,8 +35,8 @@
         player.style.height = "100%";
         document.getElementById("ruffle-container").appendChild(player);
 
-        const swfUrl = "https://cdn.jsdelivr.net/gh/RobiFet/CMinterview@a4017231eca9f2173ad7ec0e63b01e4786b4ad6b/web/src/BiWrath.swf";
-        player.load({url: swfUrl, allowScriptAccess: true}).catch(err => {
+        const swfUrl = "BiWrath.swf";
+        player.load(swfUrl).catch(err => {
             console.error("Load failed:", err);
             document.body.innerHTML = `<p style='color:red'>Cannot load SWF: ${err.message}</p>`;
         });
